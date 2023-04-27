@@ -1,8 +1,9 @@
-
-# Its a Job For the Japanse Cafe Mlo Link : https://www.youtube.com/watch?v=BKY_EltazFA (Form Fivem Shop)
-# Item Images
+# Japanse Cafe Job 
+# Mlo : https://www.youtube.com/watch?v=BKY_EltazFA (Form Fivem Shop)
+# Item Icons
 * Download the script and open images folder, put it in the qb-inventory/html/images directory.
-### Add the following code to your qb-core/shared/jobs.lua
+# Installations 
+# Add the following code to your qb-core/shared/jobs.lua
 
  ```
  ['japansecafe'] = {
