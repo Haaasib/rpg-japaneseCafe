@@ -76,8 +76,9 @@
 ["misosoup"] = math.random(20, 40),
 ["salmonnigri"] = math.random(15, 30),
 ["gyudon"] = math.random(35, 50),
-
-* Add the following code to your qb-smallresources/config/ConsumablesDrink
+```
+# Add the following code to your qb-smallresources/config/ConsumablesDrink
+```
 --ConsumablesDrink
 ["sake"] = math.random(10, 20),
 ["greentea"] = math.random(9, 18),
@@ -307,4 +308,4 @@ end)
 * QBCore Community - Thank you so much for everyone who's been testing this!
 
 # If You want to report bugs and want support Join Our Discord Server 
-https://discord.gg/vPKbrg7WuN
+https://discord.gg/kkD6bayCrz
