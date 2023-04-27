@@ -2,7 +2,7 @@ Config = {}
 Config.job = 'japansecafe'
 
 
-Config.blip = vector3(-146.41, 296.74, 99.7)
+Config.blip = vector(-164.44, 297.09, 93.76)
 Config.Duty = vector3(-146.41, 296.74, 99.7)
 Config.Tray = vector3(-171.05, 291.85, 94.86)
 Config.Tray2 = vector3(-163.35, 293.31, 94.59)
