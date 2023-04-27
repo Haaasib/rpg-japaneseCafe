@@ -1,3 +1,4 @@
+# Its a Job For the Japanse Cafe Mlo Link : https://www.youtube.com/watch?v=BKY_EltazFA (Form Fivem Shop)
 ``` * Add the following code to your qb-core/shared/jobs.lua
 Add the following code to your qb-core/shared/jobs.lua
 ['japansecafe'] = {
