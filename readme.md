@@ -292,5 +292,5 @@ If You Want Shop Then Add  this to Qb-shops/Config.lua
             type = "item",
             slot = 12,
         },
-    },```
+    },
 
