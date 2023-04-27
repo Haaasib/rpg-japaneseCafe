@@ -1,4 +1,6 @@
 * Add the following code to your qb-core/shared/jobs.lua
+
+
 ['japansecafe'] = {
 	label = 'Japanse Cafe',
     type = "japansecafe",
@@ -25,6 +27,8 @@
     },
 },
 * Add the following code to your qb-core/shared/ıtems.lua
+
+
 -- j cafe drinks
 ['sake'] = { ['name'] = 'sake', ['label'] = 'sake', ['weight'] = 100, ['type'] = 'item', ['image'] = 'sake.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'a traditional Japanese rice wine',},
 
@@ -58,6 +62,8 @@
 ['nori'] = { ['name'] = 'nori', ['label'] = 'Nori', ['weight'] = 100, ['type'] = 'item', ['image'] = 'nori.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'nori',},
 
 * Add the following code to your qb-smallresources/config/ConsumablesEat
+
+
 --Consumableseat
 
 ["sushi"] = math.random(30, 40),
@@ -76,6 +82,8 @@ Consumables Server Side
 * Add the following code to your qb-smallresources/server/consumables.lua
 --J Cafe
 -- eat
+
+
 QBCore.Functions.CreateUseableItem("sushi", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
@@ -137,6 +145,8 @@ end)
 Download the script and open images folder, put it in the qb-inventory/html/images directory.
 * Shop
 If You Want Shop Then Add  this to Qb-shops/Config.lua
+    
+    
     ["japansecafe"] = {
         ["label"] = "Japanse Cafe",
         ["coords"] = vector4(-175.87, 313.82, 97.99, 259.37),
