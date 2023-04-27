@@ -1,5 +1,7 @@
 
 # Its a Job For the Japanse Cafe Mlo Link : https://www.youtube.com/watch?v=BKY_EltazFA (Form Fivem Shop)
+# Item Images
+* Download the script and open images folder, put it in the qb-inventory/html/images directory.
 ### Add the following code to your qb-core/shared/jobs.lua
 
  ```
@@ -147,11 +149,11 @@ QBCore.Functions.CreateUseableItem("ramune", function(source, item)
 end)
 ```
 
-# Item Images
-Download the script and open images folder, put it in the qb-inventory/html/images directory.
+
 # Shop
-If You Want Shop Then Add  this to Qb-shops/Config.lua
-``` ["japansecafe"] = {
+* If You Want Shop Then Add  this to Qb-shops/Config.lua
+```
+["japansecafe"] = {
         ["label"] = "Japanse Cafe",
         ["coords"] = vector4(-175.87, 313.82, 97.99, 259.37),
         ["ped"] = 'mp_m_shopkeep_01',
@@ -295,11 +297,13 @@ If You Want Shop Then Add  this to Qb-shops/Config.lua
             type = "item",
             slot = 12,
         },
-    }, ```
+    },
+ ```
 # Credits
 * [Hasib AKA RPG](https://github.com/Haaasib/) - Main Dev
 * [Xhelby D Costa](https://github.com/xhelbydacosta15) - For making code style suggestions and helping me improve the performance.
 * [QBCore Devs](https://github.com/qbcore-framework/) - For making an awesome framework and enabling me to do this.
 * QBCore Community - Thank you so much for everyone who's been testing this!
-If You want to report bugs and want support Join Our Discord Server 
+
+# If You want to report bugs and want support Join Our Discord Server 
 https://discord.gg/vPKbrg7WuN
