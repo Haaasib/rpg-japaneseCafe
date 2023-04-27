@@ -1,7 +1,6 @@
 # Its a Job For the Japanse Cafe Mlo Link : https://www.youtube.com/watch?v=BKY_EltazFA (Form Fivem Shop)
- # Add the following code to your qb-core/shared/jobs.lua
-```Add the following code to your qb-core/shared/jobs.lua
-``` ['japansecafe'] = {
+#Add the following code to your qb-core/shared/jobs.lua
+ ```['japansecafe'] = {
 	label = 'Japanse Cafe',
     type = "japansecafe",
 	defaultDuty = true,
@@ -26,7 +25,7 @@
         },
     },
 },
-* Add the following code to your qb-core/shared/ıtems.lua
+# Add the following code to your qb-core/shared/ıtems.lua
 
 -- j cafe drinks
 ['sake'] = { ['name'] = 'sake', ['label'] = 'sake', ['weight'] = 100, ['type'] = 'item', ['image'] = 'sake.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'a traditional Japanese rice wine',},
