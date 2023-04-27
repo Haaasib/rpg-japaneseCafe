@@ -1,7 +1,7 @@
 # Its a Job For the Japanse Cafe Mlo Link : https://www.youtube.com/watch?v=BKY_EltazFA (Form Fivem Shop)
-``` * Add the following code to your qb-core/shared/jobs.lua
+ # Add the following code to your qb-core/shared/jobs.lua
 Add the following code to your qb-core/shared/jobs.lua
-['japansecafe'] = {
+` ['japansecafe'] = {
 	label = 'Japanse Cafe',
     type = "japansecafe",
 	defaultDuty = true,
@@ -25,10 +25,10 @@ Add the following code to your qb-core/shared/jobs.lua
             payment = 150
         },
     },
-},
+},`
 * Add the following code to your qb-core/shared/ıtems.lua
 
--- j cafe drinks
+`-- j cafe drinks
 ['sake'] = { ['name'] = 'sake', ['label'] = 'sake', ['weight'] = 100, ['type'] = 'item', ['image'] = 'sake.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'a traditional Japanese rice wine',},
 
 ['greentea'] = { ['name'] = 'greentea', ['label'] = 'Green Tea', ['weight'] = 100, ['type'] = 'item', ['image'] = 'greentea.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'a classic Japanese tea that is often served with sushi',},
@@ -58,13 +58,13 @@ Add the following code to your qb-core/shared/jobs.lua
 ['soysauce'] = { ['name'] = 'soysauce', ['label'] = 'Soy Sauce', ['weight'] = 100, ['type'] = 'item', ['image'] = 'soysauce.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Soy Sauce',},
 ['salmon'] = { ['name'] = 'salmon', ['label'] = 'salmon', ['weight'] = 100, ['type'] = 'item', ['image'] = 'salmon.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'salmon fish',},
 ['sugar'] = { ['name'] = 'sugar', ['label'] = 'sugar', ['weight'] = 100, ['type'] = 'item', ['image'] = 'sugar.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'sugar',},
-['nori'] = { ['name'] = 'nori', ['label'] = 'Nori', ['weight'] = 100, ['type'] = 'item', ['image'] = 'nori.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'nori',},
+['nori'] = { ['name'] = 'nori', ['label'] = 'Nori', ['weight'] = 100, ['type'] = 'item', ['image'] = 'nori.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'nori',}, `
 
 
 * Add the following code to your qb-smallresources/config/ConsumablesEat
 
 
---Consumableseat
+`--Consumableseat
 
 ["tunasashimi"] = math.random(40, 50),
 ["misosoup"] = math.random(20, 40),
@@ -76,13 +76,12 @@ Add the following code to your qb-core/shared/jobs.lua
 ["sake"] = math.random(10, 20),
 ["greentea"] = math.random(9, 18),
 ["plumwine"] = math.random(10, 20),
-["ramune"] = math.random(12, 24),```
-
+["ramune"] = math.random(12, 24),`
 Consumables Server Side
 * Add the following code to your qb-smallresources/server/consumables.lua
 
 
---J Cafe
+`--J Cafe
 -- eat
 
 
@@ -142,14 +141,14 @@ QBCore.Functions.CreateUseableItem("ramune", function(source, item)
 	if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
     TriggerClientEvent("consumables:client:DrinkAlcohol", source, item.name)
 end)
-
+`
 
 * Item Images
 Download the script and open images folder, put it in the qb-inventory/html/images directory.
 * Shop
 If You Want Shop Then Add  this to Qb-shops/Config.lua
 
- ["japansecafe"] = {
+ `["japansecafe"] = {
         ["label"] = "Japanse Cafe",
         ["coords"] = vector4(-175.87, 313.82, 97.99, 259.37),
         ["ped"] = 'mp_m_shopkeep_01',
@@ -294,4 +293,4 @@ If You Want Shop Then Add  this to Qb-shops/Config.lua
             slot = 12,
         },
     },
-
+`
