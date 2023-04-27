@@ -64,7 +64,7 @@
 ['sugar'] = { ['name'] = 'sugar', ['label'] = 'sugar', ['weight'] = 100, ['type'] = 'item', ['image'] = 'sugar.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'sugar',},
 ['nori'] = { ['name'] = 'nori', ['label'] = 'Nori', ['weight'] = 100, ['type'] = 'item', ['image'] = 'nori.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'nori',}, 
 ```
-* Add the following code to your qb-smallresources/config/ConsumablesEat
+# Add the following code to your qb-smallresources/config/ConsumablesEat
 ```
 
 --Consumableseat
@@ -81,8 +81,8 @@
 ["plumwine"] = math.random(10, 20),
 ["ramune"] = math.random(12, 24),
 ```
-  Consumables Server Side
-* Add the following code to your qb-smallresources/server/consumables.lua
+
+# Add the following code to your qb-smallresources/server/consumables.lua
 
 ```
 --J Cafe
@@ -147,9 +147,9 @@ QBCore.Functions.CreateUseableItem("ramune", function(source, item)
 end)
 ```
 
-* Item Images
+# Item Images
 Download the script and open images folder, put it in the qb-inventory/html/images directory.
-* Shop
+# Shop
 If You Want Shop Then Add  this to Qb-shops/Config.lua
 ``` ["japansecafe"] = {
         ["label"] = "Japanse Cafe",
@@ -296,7 +296,7 @@ If You Want Shop Then Add  this to Qb-shops/Config.lua
             slot = 12,
         },
     }, ```
-## Credits
+# Credits
 * [Hasib AKA RPG](https://github.com/Haaasib/) - Main Dev
 * [Xhelby D Costa](https://github.com/xhelbydacosta15) - For making code style suggestions and helping me improve the performance.
 * [QBCore Devs](https://github.com/qbcore-framework/) - For making an awesome framework and enabling me to do this.
