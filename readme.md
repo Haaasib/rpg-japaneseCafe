@@ -1,6 +1,9 @@
+
 # Its a Job For the Japanse Cafe Mlo Link : https://www.youtube.com/watch?v=BKY_EltazFA (Form Fivem Shop)
-# Add the following code to your qb-core/shared/jobs.lua
- ```['japansecafe'] = {
+### Add the following code to your qb-core/shared/jobs.lua
+
+ ```
+ ['japansecafe'] = {
 	label = 'Japanse Cafe',
     type = "japansecafe",
 	defaultDuty = true,
@@ -24,7 +27,8 @@
             payment = 150
         },
     },
-},```
+},
+```
 
 # Add the following code to your qb-core/shared/ıtems.lua
 
@@ -292,3 +296,10 @@ If You Want Shop Then Add  this to Qb-shops/Config.lua
             slot = 12,
         },
     },
+## Credits
+* [Hasib AKA RPG](https://github.com/Haaasib/) - Main Dev
+* [Xhelby D Costa](https://github.com/xhelbydacosta15) - For making code style suggestions and helping me improve the performance.
+* [QBCore Devs](https://github.com/qbcore-framework/) - For making an awesome framework and enabling me to do this.
+* QBCore Community - Thank you so much for everyone who's been testing this!
+If You want to report bugs and want support Join Our Discord Server 
+https://discord.gg/vPKbrg7WuN
