@@ -25,6 +25,7 @@
     },
 },
 * Add the following code to your qb-core/shared/ıtems.lua
+```
 -- j cafe drinks
 ['sake'] = { ['name'] = 'sake', ['label'] = 'sake', ['weight'] = 100, ['type'] = 'item', ['image'] = 'sake.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'a traditional Japanese rice wine',},
 
@@ -55,11 +56,11 @@
 ['soysauce'] = { ['name'] = 'soysauce', ['label'] = 'Soy Sauce', ['weight'] = 100, ['type'] = 'item', ['image'] = 'soysauce.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Soy Sauce',},
 ['salmon'] = { ['name'] = 'salmon', ['label'] = 'salmon', ['weight'] = 100, ['type'] = 'item', ['image'] = 'salmon.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'salmon fish',},
 ['sugar'] = { ['name'] = 'sugar', ['label'] = 'sugar', ['weight'] = 100, ['type'] = 'item', ['image'] = 'sugar.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'sugar',},
-['nori'] = { ['name'] = 'nori', ['label'] = 'Nori', ['weight'] = 100, ['type'] = 'item', ['image'] = 'nori.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'nori',},
+['nori'] = { ['name'] = 'nori', ['label'] = 'Nori', ['weight'] = 100, ['type'] = 'item', ['image'] = 'nori.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'nori',}, ```
 
 * Add the following code to your qb-smallresources/config/ConsumablesEat
 --Consumableseat
-
+```
 ["sushi"] = math.random(30, 40),
 ["tunasashimi"] = math.random(40, 50),
 ["misosoup"] = math.random(20, 40),
@@ -72,8 +73,10 @@
 ["greentea"] = math.random(9, 18),
 ["plumwine"] = math.random(10, 20),
 ["ramune"] = math.random(12, 24),
+```
 Consumables Server Side
 * Add the following code to your qb-smallresources/server/consumables.lua
+```
 --J Cafe
 -- eat
 QBCore.Functions.CreateUseableItem("sushi", function(source, item)
@@ -132,12 +135,12 @@ QBCore.Functions.CreateUseableItem("ramune", function(source, item)
 	if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
     TriggerClientEvent("consumables:client:DrinkAlcohol", source, item.name)
 end)
-
+```
 * Item Images
 Download the script and open images folder, put it in the qb-inventory/html/images directory.
 * Shop
 If You Want Shop Then Add  this to Qb-shops/Config.lua
-    ["japansecafe"] = {
+ ```   ["japansecafe"] = {
         ["label"] = "Japanse Cafe",
         ["coords"] = vector4(-175.87, 313.82, 97.99, 259.37),
         ["ped"] = 'mp_m_shopkeep_01',
@@ -281,4 +284,4 @@ If You Want Shop Then Add  this to Qb-shops/Config.lua
             type = "item",
             slot = 12,
         },
-    },
+    },```
