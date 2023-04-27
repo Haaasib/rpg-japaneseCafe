@@ -302,7 +302,7 @@ end)
     },
  ```
 # Credits
-* [Hasib AKA RPG](https://github.com/Haaasib/) - Main Dev
+* [Hasib AKA RPG](https://github.com/Haaasib/) - Creator
 * [Xhelby D Costa](https://github.com/xhelbydacosta15) - For making code style suggestions and helping me improve the performance.
 * [QBCore Devs](https://github.com/qbcore-framework/) - For making an awesome framework and enabling me to do this.
 * QBCore Community - Thank you so much for everyone who's been testing this!
