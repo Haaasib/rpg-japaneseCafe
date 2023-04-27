@@ -1,6 +1,4 @@
-```* Add the following code to your qb-core/shared/jobs.lua
-
-
+``` * Add the following code to your qb-core/shared/jobs.lua
 ['japansecafe'] = {
 	label = 'Japanse Cafe',
     type = "japansecafe",
