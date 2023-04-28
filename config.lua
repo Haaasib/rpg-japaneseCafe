@@ -19,11 +19,11 @@ Config.Sushist = vector3(-1202.69, -897.46, 14.0)
 Config.bill = vector3(-170.99, 295.2, 94.82)
 Config.Clean = vector3(-174.18, 300.45, 97.3)
 Config.Dirt = 10
-<<<<<<< HEAD
+
 -- items  its on under development
-=======
+
 -- items
->>>>>>> 59ca17b1d510554d39e5a234aa7c14578366a257
+
 -- Config.Sushi = "sushi"
 -- Config.Salmonnigri = "salmonnigri"
 -- Config.Gyudon = "gyudon"
