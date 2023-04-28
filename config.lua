@@ -2,7 +2,7 @@ Config = {}
 Config.job = 'japansecafe'
 
 
-Config.blip = vector3(-146.41, 296.74, 99.7)
+Config.blip = vector(-164.44, 297.09, 93.76)
 Config.Duty = vector3(-146.41, 296.74, 99.7)
 Config.Tray = vector3(-171.05, 291.85, 94.86)
 Config.Tray2 = vector3(-163.35, 293.31, 94.59)
@@ -19,7 +19,11 @@ Config.Sushist = vector3(-1202.69, -897.46, 14.0)
 Config.bill = vector3(-170.99, 295.2, 94.82)
 Config.Clean = vector3(-174.18, 300.45, 97.3)
 Config.Dirt = 10
+<<<<<<< HEAD
 -- items  its on under development
+=======
+-- items
+>>>>>>> 59ca17b1d510554d39e5a234aa7c14578366a257
 -- Config.Sushi = "sushi"
 -- Config.Salmonnigri = "salmonnigri"
 -- Config.Gyudon = "gyudon"

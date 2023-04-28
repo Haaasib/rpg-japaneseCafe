@@ -1,5 +1,12 @@
-* Add the following code to your qb-core/shared/jobs.lua
-['japansecafe'] = {
+# Japanse Cafe Job 
+# Mlo : https://www.youtube.com/watch?v=BKY_EltazFA (Form Fivem Shop)
+# Item Icons
+* Download the script and open images folder, put it in the qb-inventory/html/images directory.
+# Installations 
+# Add the following code to your qb-core/shared/jobs.lua
+
+ ```
+ ['japansecafe'] = {
 	label = 'Japanse Cafe',
     type = "japansecafe",
 	defaultDuty = true,
@@ -24,7 +31,13 @@
         },
     },
 },
+<<<<<<< HEAD
 * Add the following code to your qb-core/shared/ıtems.lua
+=======
+```
+
+# Add the following code to your qb-core/shared/ıtems.lua
+>>>>>>> 59ca17b1d510554d39e5a234aa7c14578366a257
 ```
 -- j cafe drinks
 ['sake'] = { ['name'] = 'sake', ['label'] = 'sake', ['weight'] = 100, ['type'] = 'item', ['image'] = 'sake.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'a traditional Japanese rice wine',},
@@ -56,29 +69,48 @@
 ['soysauce'] = { ['name'] = 'soysauce', ['label'] = 'Soy Sauce', ['weight'] = 100, ['type'] = 'item', ['image'] = 'soysauce.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Soy Sauce',},
 ['salmon'] = { ['name'] = 'salmon', ['label'] = 'salmon', ['weight'] = 100, ['type'] = 'item', ['image'] = 'salmon.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'salmon fish',},
 ['sugar'] = { ['name'] = 'sugar', ['label'] = 'sugar', ['weight'] = 100, ['type'] = 'item', ['image'] = 'sugar.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'sugar',},
+<<<<<<< HEAD
 ['nori'] = { ['name'] = 'nori', ['label'] = 'Nori', ['weight'] = 100, ['type'] = 'item', ['image'] = 'nori.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'nori',}, ```
+=======
+['nori'] = { ['name'] = 'nori', ['label'] = 'Nori', ['weight'] = 100, ['type'] = 'item', ['image'] = 'nori.png', ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'nori',}, 
+```
+# Add the following code to your qb-smallresources/config/ConsumablesEat
+```
+>>>>>>> 59ca17b1d510554d39e5a234aa7c14578366a257
 
-* Add the following code to your qb-smallresources/config/ConsumablesEat
 --Consumableseat
+<<<<<<< HEAD
 ```
 ["sushi"] = math.random(30, 40),
+=======
+
+>>>>>>> 59ca17b1d510554d39e5a234aa7c14578366a257
 ["tunasashimi"] = math.random(40, 50),
 ["misosoup"] = math.random(20, 40),
 ["salmonnigri"] = math.random(15, 30),
 ["gyudon"] = math.random(35, 50),
-
-* Add the following code to your qb-smallresources/config/ConsumablesDrink
+```
+# Add the following code to your qb-smallresources/config/ConsumablesDrink
+```
 --ConsumablesDrink
 ["sake"] = math.random(10, 20),
 ["greentea"] = math.random(9, 18),
 ["plumwine"] = math.random(10, 20),
 ["ramune"] = math.random(12, 24),
 ```
+<<<<<<< HEAD
 Consumables Server Side
 * Add the following code to your qb-smallresources/server/consumables.lua
+=======
+
+# Add the following code to your qb-smallresources/server/consumables.lua
+
+>>>>>>> 59ca17b1d510554d39e5a234aa7c14578366a257
 ```
 --J Cafe
 -- eat
+
+
 QBCore.Functions.CreateUseableItem("sushi", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
@@ -118,12 +150,6 @@ QBCore.Functions.CreateUseableItem("sake", function(source, item)
     TriggerClientEvent("consumables:client:DrinkAlcohol", source, item.name)
 end)
 
-QBCore.Functions.CreateUseableItem("greentea", function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
-    TriggerClientEvent("consumables:client:Drink", source, item.name)
-end)
-
 QBCore.Functions.CreateUseableItem("plumwine", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
@@ -136,11 +162,20 @@ QBCore.Functions.CreateUseableItem("ramune", function(source, item)
     TriggerClientEvent("consumables:client:DrinkAlcohol", source, item.name)
 end)
 ```
+<<<<<<< HEAD
 * Item Images
 Download the script and open images folder, put it in the qb-inventory/html/images directory.
 * Shop
 If You Want Shop Then Add  this to Qb-shops/Config.lua
  ```   ["japansecafe"] = {
+=======
+
+
+# Shop
+* If You Want Shop Then Add  this to Qb-shops/Config.lua
+```
+["japansecafe"] = {
+>>>>>>> 59ca17b1d510554d39e5a234aa7c14578366a257
         ["label"] = "Japanse Cafe",
         ["coords"] = vector4(-175.87, 313.82, 97.99, 259.37),
         ["ped"] = 'mp_m_shopkeep_01',
@@ -284,4 +319,17 @@ If You Want Shop Then Add  this to Qb-shops/Config.lua
             type = "item",
             slot = 12,
         },
+<<<<<<< HEAD
     },```
+=======
+    },
+ ```
+# Credits
+* [Hasib AKA RPG](https://github.com/Haaasib/) - Creator
+* [Xhelby D Costa](https://github.com/xhelbydacosta15) - For making code style suggestions and helping me improve the performance.
+* [QBCore Devs](https://github.com/qbcore-framework/) - For making an awesome framework and enabling me to do this.
+* QBCore Community - Thank you so much for everyone who's been testing this!
+
+# If You want to report bugs and want support Join Our Discord Server 
+https://discord.gg/kkD6bayCrz
+>>>>>>> 59ca17b1d510554d39e5a234aa7c14578366a257
