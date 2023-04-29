@@ -26,16 +26,16 @@ RegisterServerEvent("rpg-jcafe:bill:player", function(playerId, amount)
                     })
                 end
                 TriggerClientEvent('qb-phone:RefreshPhone', billed.PlayerData.source)
-                TriggerClientEvent('QBCore:Notify', source, 'Invoice Successfully Sent', 'uwu')
-                TriggerClientEvent('QBCore:Notify', billed.PlayerData.source, 'New Invoice Received', 'uwu')
+                TriggerClientEvent('QBCore:Notify', source, 'Invoice Successfully Sent', 'arigato')
+                TriggerClientEvent('QBCore:Notify', billed.PlayerData.source, 'New Invoice Received', 'arigato')
             else
-                TriggerClientEvent('QBCore:Notify', source, 'Must Be A Valid Amount Above 0', 'uwu')
+                TriggerClientEvent('QBCore:Notify', source, 'Must Be A Valid Amount Above 0', 'arigato')
             end
         else
             TriggerClientEvent('QBCore:Notify', source, 'You Cannot Bill Yourself', 'error')
         end
     else
-        TriggerClientEvent('QBCore:Notify', source, 'Player Not Online', 'uwu')
+        TriggerClientEvent('QBCore:Notify', source, 'Player Not Online', 'arigato')
     end
 end)
 
