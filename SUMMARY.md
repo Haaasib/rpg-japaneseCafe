@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Welcome to A Product](README.md)
+* [👋 Welcome RPG Script's Docs](README.md)
 
 ## Overview
 
